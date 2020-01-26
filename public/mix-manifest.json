@@ -1,0 +1,12 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/css/front.css": "/css/front.css",
+    "/js/game.update.js": "/js/game.update.js",
+    "/js/jquery.rateit.min.js": "/js/jquery.rateit.min.js",
+    "/js/modal.js": "/js/modal.js",
+    "/js/profile.update.js": "/js/profile.update.js",
+    "/js/rateit.event.js": "/js/rateit.event.js",
+    "/js/report.js": "/js/report.js",
+    "/js/review.update.js": "/js/review.update.js"
+}

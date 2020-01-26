@@ -1,0 +1,159 @@
+body {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal-content {
+  background-color: #e0ffff;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  border: none;
+}
+
+#reteit-value {
+  font-family: 'Arial Black';
+  font-size: 1.2rem;
+  padding-left: 0;
+}
+
+.ui-autocomplete {
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 20px;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+input[type=radio] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn {
+  background-color: #ffffff;
+  border-color: #4763c2;
+  color: #4763c2;
+}
+
+.card {
+  border-color: #a9a9a9;
+  padding: 2px 2px 2px 2px;
+}
+
+.card-header {
+  color: #ffffff;
+  background-color: #428bca;
+}
+
+.card-body {
+  background-color: #e0ffff;
+}
+
+.page-review {
+  background-color: #4763c2;
+}
+
+.navbar,
+.nav-link,
+.nav-link:hover,
+.nav-item {
+  background-color: #4763c2;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.nav-title,
+.nav-title:hover {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-search {
+  font-size: 1rem;
+}
+
+.nav-search-btn {
+  font-size: 1rem;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus {
+  outline-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.contain-top,
+.contain-center,
+.review-submit {
+  background-color: #e0ffff;
+  border-color: #a9a9a9;
+}
+
+.add-game-info .card {
+  background-color: #e6e6fa;
+}
+
+.game-point-ave .card {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #4763c2;
+}
+
+.game-point-ave h2 {
+  font-family: 'Arial Black';
+}
+
+.game-point-ave .trim_ave {
+  font-size: 0.8rem;
+}
+
+.game-point {
+  font-family: 'Arial Black';
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #4763c2;
+}
+
+.game-review:hover,
+.game-info:hover {
+  background-color: #e0ffff;
+  border-color: #4763c2;
+}
+
+.review_eval {
+  font-family: 'Arial Black';
+}
+
+.profile-image {
+  height: 115px;
+  width: 115px;
+}
+
+.card-image {
+  height: 20px;
+  width: 20px;
+}
+
+.contain-bottom {
+  background-color: #404040;
+  color: #ffffff;
+  border-color: #4763c2;
+}
+

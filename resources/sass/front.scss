@@ -1,0 +1,162 @@
+@import "variables";
+
+body {
+  color: $black;
+  background-color: $white;
+}
+
+// モーダル用
+.modal-content {
+  background-color: $bg-main;
+}
+
+.modal-header, .modal-body, .modal-footer {
+  border: none;
+}
+
+//星評価用
+#reteit-value {
+  font-family: 'Arial Black';
+  font-size: $font-size-star;
+  padding-left: 0;
+}
+
+//jquery-ui用
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+}
+
+// body用
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn{
+  background-color: $white;
+  border-color: $bd-blue;
+  color: $bg-header;
+}
+
+.card {
+  border-color: $bd-main;
+  padding: 2px 2px 2px 2px;
+}
+
+.card-header {
+  color: $white;
+  background-color: $bg-accent;
+}
+
+.card-body {
+  background-color: $bg-main;
+}
+
+.page-review {
+  background-color: $bg-header;
+}
+
+.navbar, .nav-link, .nav-link:hover, .nav-item {
+  background-color: $bg-header;
+  color: $white;
+  font-size: $font-size-navbar;
+}
+
+.nav-title, .nav-title:hover {
+  color: $white;
+  font-size: $font-size-title;
+  text-decoration: none;
+}
+
+.nav-search {
+  font-size: $font-size-navbar;
+}
+
+.nav-search-btn {
+  font-size: $font-size-navbar;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus{
+  outline-color: $white;
+  border-color: $white;
+}
+
+.contain-top, .contain-center, .review-submit {
+  background-color: $bg-main;
+  border-color: $bd-main;
+}
+
+.add-game-info {
+  // color: $font-second;
+  .card {
+    background-color: $bg-second;
+  }
+}
+
+.game-point-ave {
+  .card {
+    color: $white;
+    background-color: $bg-accent;
+    border-color: $bd-blue;
+  }
+  h2 {
+    font-family: 'Arial Black';
+  }
+  .trim_ave {
+    font-size: 0.8rem;
+  }
+}
+
+.game-point{
+  font-family: 'Arial Black';
+  color: $white;
+  background-color: $bg-accent;
+  border-color: $bd-blue;
+}
+
+.game-review:hover, .game-info:hover{
+  background-color: $bg-main;
+  border-color: $bd-blue;
+}
+
+.review-title {
+  //background-color: $white;
+}
+
+.review_eval {
+  font-family: 'Arial Black';
+}
+
+.profile-image {
+  height:115px;
+  width:115px;
+}
+
+.card-image {
+  height: 20px;
+  width: 20px;
+}
+
+.contain-bottom {
+  background-color: $bg-footer;
+  color: $white;
+  border-color: $bd-blue;
+}
