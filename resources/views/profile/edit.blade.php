@@ -25,7 +25,7 @@
                     </div>
                     <div class="d-flex flex-column ml-4">
                         <div class="form-text text-info ml-3">
-                            <img class="profile-image" src="{{ asset('storage/image/'.$profile_info->image_path) }}" alt="👤">
+                            <img class="profile-image" src="{{ asset($profile_info->image_path) }}" alt="👤">
                             <input type="file" class="form-control-file mt-2" name="image">
                         </div>
                         <div class="form-check ml-3">

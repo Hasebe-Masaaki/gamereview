@@ -9,7 +9,6 @@ class ProfileController extends Controller
 {
     public function info(Request $request)
     {
-        // レビュー記事を削除する
         $called = app()->make('App\Http\Controllers\ProfileController');
         $view = $called->info($request);
 

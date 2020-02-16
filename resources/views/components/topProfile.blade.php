@@ -13,7 +13,7 @@
         <div class="row no-gutters">
             <div class="col-4 col-md-5">
                 <div class="mx-auto my-auto ml-md-3">
-                    <img class="profile-image" src="{{ asset('storage/image/'.$profile_info->image_path) }}" alt="👤">
+                    <img class="profile-image" src="{{ asset($profile_info->image_path) }}" alt="👤">
                 </div>
             </div>
             <div class="col-8 col-md-7">

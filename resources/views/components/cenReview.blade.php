@@ -33,22 +33,22 @@
             data-date="{{ $review_info->game->release_date->format('Y年n月d日') }}"
             data-reviewtitle="{{ $review_info->review_title }}"
             data-content="{{ $review_info->review_content }}"
-            data-image="{{ isset($review_info->profile->image_path) ? asset('storage/image/'.$review_info->profile->image_path) : '' }}"
+            data-image="{{ isset($review_info->profile->image_path) ? asset($review_info->profile->image_path) : '' }}"
             data-userlink="{{ action($action_profile, ['user_id' => $review_info->profile->user_id]) }}"
             data-user="{{ isset($review_info->profile->user_name) ? $review_info->profile->user_name : '名もなきレビュアー'}}"
             data-eval="{{ $eval }}"
             data-loginid="{{ Auth::id() }}"
             data-toggle="modal" data-target="#Modal">
-                <h5 class="m-0 mt-1 ml-1">{{ Str::limit($review_info->game->game_title, 40) }}</h5>
+                <h5 class="m-0 mt-1 ml-1">{{ Str::limit($review_info->game->game_title, 50) }}</h5>
                 @if ($review_info->spoiler_flg)
                     <p class="text-danger m-0 ml-1">※このレビューはネタバレを含んでいます</p>
                 @else
                     <p class="review-title m-0 ml-1">
-                        {{ Str::limit($review_info->review_title, 50) }}
+                        {{ Str::limit($review_info->review_title, 60) }}
                     </p>
                 @endif
                 <div class="text-right m-0 mr-2">
-                    <img class="card-image mb-1" src="{{ isset($review_info->profile->image_path) ? asset('storage/image/'.$review_info->profile->image_path) : '' }}" alt="👤">
+                    <img class="card-image mb-1" src="{{ isset($review_info->profile->image_path) ? asset($review_info->profile->image_path) : '' }}" alt="👤">
                     <span class="mr-2">{{ isset($review_info->profile->user_name) ? $review_info->profile->user_name : '名もなきレビュアー' }}</span>
                     <span>このレビューの評価</span>
                     <span class="review_eval">☆{{ $eval }}</span>

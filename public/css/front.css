@@ -133,7 +133,15 @@ textarea {
 
 .game-review:hover,
 .game-info:hover {
-  background-color: #e0ffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e0ffff), to(#f0ffff));
+  background: linear-gradient(to bottom, #e0ffff, #f0ffff);
+  border-color: #4763c2;
+}
+
+.game-review:active,
+.game-info:active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e0ffff), to(#f0ffff));
+  background: linear-gradient(to top, #e0ffff, #f0ffff);
   border-color: #4763c2;
 }
 

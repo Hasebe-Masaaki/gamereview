@@ -31,22 +31,22 @@
             data-date="{{ $report_info->review->game->release_date->format('Y年n月d日') }}"
             data-reviewtitle="{{ $report_info->review->review_title }}"
             data-content="{{ $report_info->review->review_content }}"
-            data-image="{{ isset($report_info->review->profile->image_path) ? asset('storage/image/'.$report_info->review->profile->image_path) : '' }}"
+            data-image="{{ isset($report_info->review->profile->image_path) ? asset($report_info->review->profile->image_path) : '' }}"
             data-userlink="{{ action('Admin\ProfileController@info', ['user_id' => $report_info->review->profile->user_id]) }}"
             data-user="{{ isset($report_info->review->profile->user_name) ? $report_info->review->profile->user_name : '名もなきレビュアー'}}"
             data-eval="{{ $eval }}"
             data-loginid="{{ Auth::id() }}"
             data-toggle="modal" data-target="#Modal">
-                <h5 class="m-0 mt-1 ml-1">{{ Str::limit($report_info->review->game->game_title, 40) }}</h5>
+                <h5 class="m-0 mt-1 ml-1">{{ Str::limit($report_info->review->game->game_title, 50) }}</h5>
                 @if ($report_info->review->spoiler_flg)
                     <p class="text-danger m-0 ml-1">※このレビューはネタバレを含んでいます</p>
                 @else
                     <p class="review-title m-0 ml-1">
-                        {{ Str::limit($report_info->review->review_title, 50) }}
+                        {{ Str::limit($report_info->review->review_title, 60) }}
                     </p>
                 @endif
                 <div class="text-right m-0 mr-2">
-                    <img class="card-image mb-1" src="{{ isset($report_info->review->profile->image_path) ? asset('storage/image/'.$report_info->review->profile->image_path) : '' }}" alt="👤">
+                    <img class="card-image mb-1" src="{{ isset($report_info->review->profile->image_path) ? asset($report_info->review->profile->image_path) : '' }}" alt="👤">
                     <span class="mr-2">{{ isset($report_info->review->profile->user_name) ? $report_info->review->profile->user_name : '名もなきレビュアー' }}</span>
                     <span>このレビューの評価</span>
                     <span class="review_eval">☆{{ $eval }}</span>

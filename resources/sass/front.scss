@@ -46,6 +46,18 @@ textarea {
     resize: none;
 }
 
+// input[type=button]:hover, .input[type=button]:hover{
+//   // background-color: $bg-main;
+//   background:linear-gradient(to bottom, $bg-main, $bg-button);
+//   border-color: $bd-blue;
+// }
+//
+// input[type=button]:active, input[type=button]:active{
+//   // background-color: $bg-main;
+//   background:linear-gradient(to top, $bg-main, $bg-button);
+//   border-color: $bd-blue;
+// }
+
 .btn{
   background-color: $white;
   border-color: $bd-blue;
@@ -133,7 +145,14 @@ textarea {
 }
 
 .game-review:hover, .game-info:hover{
-  background-color: $bg-main;
+  // background-color: $bg-main;
+  background:linear-gradient(to bottom, $bg-main, $bg-button);
+  border-color: $bd-blue;
+}
+
+.game-review:active, .game-info:active{
+  // background-color: $bg-main;
+  background:linear-gradient(to top, $bg-main, $bg-button);
   border-color: $bd-blue;
 }
 
