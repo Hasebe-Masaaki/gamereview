@@ -25,6 +25,7 @@ class UsersTableSeeder extends Seeder
 
 
         // SET auto-increment start value
-        DB::statement("ALTER TABLE users AUTO_INCREMENT = 10000;");
+        // DB::statement("ALTER TABLE users AUTO_INCREMENT = 10000;");
+        DB::statement("ALTER TABLE users SERIAL = 10000;");
     }
 }
