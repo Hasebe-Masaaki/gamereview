@@ -93,11 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$('#form-gameadd').submit(function (event) {
-  if (!confirm("ゲーム情報を更新します。よろしいですか？")) {
-    event.preventDefault();
-  }
-});
+eval("$('#form-gameadd').submit(function (event) {\n  if (!confirm(\"ゲーム情報を更新します。よろしいですか？\")) {\n    event.preventDefault();\n  }\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvY29tcG9uZW50cy9nYW1lLnVwZGF0ZS5qcz84NjE2Il0sIm5hbWVzIjpbIiQiLCJzdWJtaXQiLCJldmVudCIsImNvbmZpcm0iLCJwcmV2ZW50RGVmYXVsdCJdLCJtYXBwaW5ncyI6IkFBQUFBLENBQUMsQ0FBQyxlQUFELENBQUQsQ0FBbUJDLE1BQW5CLENBQTBCLFVBQVNDLEtBQVQsRUFBZ0I7QUFDeEMsTUFBSSxDQUFDQyxPQUFPLENBQUMsc0JBQUQsQ0FBWixFQUFzQztBQUNsQ0QsU0FBSyxDQUFDRSxjQUFOO0FBQ0g7QUFDRixDQUpEIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL2pzL2NvbXBvbmVudHMvZ2FtZS51cGRhdGUuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIkKCcjZm9ybS1nYW1lYWRkJykuc3VibWl0KGZ1bmN0aW9uKGV2ZW50KSB7XG4gIGlmICghY29uZmlybShcIuOCsuODvOODoOaDheWgseOCkuabtOaWsOOBl+OBvuOBmeOAguOCiOOCjeOBl+OBhOOBp+OBmeOBi++8n1wiKSkge1xuICAgICAgZXZlbnQucHJldmVudERlZmF1bHQoKTtcbiAgfVxufSk7XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/js/components/game.update.js\n");
 
 /***/ }),
 

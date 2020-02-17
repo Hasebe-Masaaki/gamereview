@@ -21,3 +21,5 @@ mix.js('resources/js/app.js', 'public/js')
   .js('resources/js/components/game.update.js', 'public/js')
   .sass('resources/sass/app.scss', 'public/css')
   .sass('resources/sass/front.scss', 'public/css');
+
+mix.sourceMaps().js('node_modules/popper.js/dist/popper.js', 'public/js').sourceMaps();

@@ -5,6 +5,7 @@
     "/js/game.update.js": "/js/game.update.js",
     "/js/jquery.rateit.min.js": "/js/jquery.rateit.min.js",
     "/js/modal.js": "/js/modal.js",
+    "/js/popper.js": "/js/popper.js",
     "/js/profile.update.js": "/js/profile.update.js",
     "/js/rateit.event.js": "/js/rateit.event.js",
     "/js/report.js": "/js/report.js",
