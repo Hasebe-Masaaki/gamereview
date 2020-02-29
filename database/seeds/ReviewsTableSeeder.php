@@ -21,7 +21,7 @@ class ReviewsTableSeeder extends CsvSeeder
             DB::statement("ALTER TABLE reviews AUTO_INCREMENT = 10001;");
         }
         elseif (config('database.default') == 'pgsql') {
-            DB::statement("select setval ('reviews_id_seq', 10000);");
+            DB::statement("select setval ('reviews_review_id_seq', 10000);");
         }
     }
 }
