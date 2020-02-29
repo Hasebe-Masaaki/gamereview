@@ -23,7 +23,7 @@ class AutocompController extends Controller
         //コールバックで返す用の変数(配列)
         $d_arr = array();
 
-        $data = Game::where('game_title', 'LIKE','%'.$game_keyword.'%')->get();
+        $data = Game::where('game_title', 'LIKE', '%'.$game_keyword.'%')->get();
 
         if($data){
             foreach($data as $d){
@@ -38,7 +38,9 @@ class AutocompController extends Controller
     public function select(Request $request)
     {
         //特定のゲームタイトルのレコードを取得
-        $game_title = $request->str;
+        $game_title = $request->str["value"];
+        // \Debugbar::info($request->str["value"]);
+        // $game_info = Game::where('game_title', 'LIKE', '%'.$game_title.'%')->first();
         $game_info = Game::where('game_title', $game_title)->first();
         $reviews = Review::where('game_id', $game_info->game_id);
         //\Debugbar::info($game_info);
