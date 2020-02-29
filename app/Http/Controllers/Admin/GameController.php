@@ -68,11 +68,11 @@ class GameController extends Controller
 
         // Review Modelからデータを取得する
         $game = new Game;
-        $game->game_id = $request->game_id;
+        //$game->game_id = $request->game_id;
         //\Debugbar::info($review);
 
         // 既存レコードがなければ新規登録、あれば更新
-        $game_record = Game::where('game_id', $game->game_id)->first();
+        $game_record = Game::where('game_id', $request->game_id)->first();
         if(empty($game_record)) {
             $game->created_at = Carbon::now();
         }
