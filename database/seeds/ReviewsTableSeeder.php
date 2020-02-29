@@ -16,4 +16,12 @@ class ReviewsTableSeeder extends CsvSeeder
         DB::table($this->table)->truncate();
         parent::run();
     }
+
+    // SET auto-increment start value
+    if (config('database.default') == 'mysql') {
+        DB::statement("ALTER TABLE users AUTO_INCREMENT = 10001;");
+    }
+    elseif (config('database.default') == 'pgsql') {
+        DB::statement("select setval ('users_id_seq', 10000);");
+    }
 }
