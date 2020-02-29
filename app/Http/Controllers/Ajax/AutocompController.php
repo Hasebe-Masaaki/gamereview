@@ -39,7 +39,7 @@ class AutocompController extends Controller
     {
         //特定のゲームタイトルのレコードを取得
         $game_title = $request->str;
-        $game_info = Game::where('game_title', $game_title)->first();
+        $game_info = Game::where('game_title', '$game_title')->first();
         $reviews = Review::where('game_id', $game_info->game_id);
         //\Debugbar::info($game_info);
 
