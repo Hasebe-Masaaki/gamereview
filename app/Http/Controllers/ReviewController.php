@@ -109,11 +109,15 @@ class ReviewController extends Controller
         $datas = $this->reviewPoint($reviews);
 
         //レビュー済であればレコードを取得
-        $review_info = $reviews->where('user_id', Auth::id())->first();
-        if (empty($review_info)) {
-            $review_info = new Review;
+        if (isset($request->review_id)) {
+            $review_info = $reviews->where('review_id', $request->review_id)->first();
         }
-        //\Debugbar::info($game_info);
+        else {
+            $review_info = $reviews->where('user_id', Auth::id())->first();
+            if (empty($review_info)) {
+                $review_info = new Review;
+            }
+        }
 
         return view('review.add', ['game_info' => $game_info, 'review_info' => $review_info, 'datas' => $datas]);
     }
@@ -159,16 +163,16 @@ class ReviewController extends Controller
 
         // Review Modelからデータを取得する
         $review = new Review;
-        $review->game_id = $request->game_id;
+        $review->review_id = $request->review_id;
         //\Debugbar::info($review);
 
-        // ログインユーザのIDを取得
-        $review->user_id = Auth::id();
-
         // 既存レコードがなければ新規登録、あれば更新
-        $review_record = Review::where('game_id', $review->game_id)
-                                    ->where('user_id', $review->user_id)->first();
+        $review_record = Review::where('review_id', $review->review_id)->first();
+
         if(empty($review_record)) {
+            // ログインユーザのIDを取得
+            $review->user_id = Auth::id();
+            $review->game_id = $request->game_id;
             $review->created_at = Carbon::now();
         }
         else {

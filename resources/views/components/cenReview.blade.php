@@ -1,6 +1,8 @@
 {{-- コンテンツセンター（レビュー一覧）--}}
 <?php $action_game = $admin_flg ? 'Admin\GameController@edit' : 'ReviewController@info'; ?>
 <?php $action_profile = $admin_flg ? 'Admin\ProfileController@info' : 'ProfileController@info'; ?>
+<?php $action_add = $admin_flg ? 'Admin\ReviewController@add' : 'ReviewController@add'; ?>
+<?php $action_delete = $admin_flg ? 'Admin\ReviewController@delete' : 'ReviewController@delete'; ?>
 <div class="game-info-top row no-gutters align-items-start m-2">
     <h5 class="card">{{ $review_count ? '最近のレビュー' : 'レビューが投稿されていません' }}</h5>
     <span class="d-flex justify-content ml-auto">
@@ -59,10 +61,10 @@
             <div class="col-md-1 my-auto text-center">
                     <!-- <input type="button" class="review_edit mx-auto d-block" value="編集"
                         onclick="location.href='{{ action('ReviewController@edit', ['review_id' => $review_info->review_id]) }}'"> -->
-                    <a class="btn btn-primary review_delete mb-2 px-1 py-0"
-                        href="{{ action('ReviewController@add', ['game_id' => $review_info->game->game_id]) }}">編集</a>
+                    <a class="btn btn-primary review_add mb-2 px-1 py-0"
+                        href="{{ action($action_add, ['game_id' => $review_info->game->game_id, 'review_id' => $review_info->review_id]) }}">編集</a>
                     <a class="btn btn-primary review_delete px-1 py-0" onclick="return confirm('レビュー内容を削除します。よろしいですか？')"
-                        href="{{ action('ReviewController@delete', ['review_id' => $review_info->review_id]) }}">削除</a>
+                        href="{{ action($action_delete, ['review_id' => $review_info->review_id]) }}">削除</a>
             </div>
         @endif
 

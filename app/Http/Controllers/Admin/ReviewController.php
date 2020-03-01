@@ -59,7 +59,7 @@ class ReviewController extends Controller
 
     public function update(Request $request)
     {
-        // レビュー記事を削除する
+        // レビュー記事を更新する
         $called = app()->make('App\Http\Controllers\ReviewController');
         $redirect = $called->create($request);
 
