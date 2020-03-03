@@ -163,11 +163,11 @@ class ReviewController extends Controller
 
         // Review Modelからデータを取得する
         $review = new Review;
-        $review->review_id = $request->review_id;
+        // $review->review_id = $request->review_id;
         //\Debugbar::info($review);
 
         // 既存レコードがなければ新規登録、あれば更新
-        $review_record = Review::where('review_id', $review->review_id)->first();
+        $review_record = Review::where('review_id', $request->review_id)->first();
 
         if(empty($review_record)) {
             // ログインユーザのIDを取得
