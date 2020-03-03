@@ -161,8 +161,6 @@ class ReviewController extends Controller
         // $review->fill($form);
         // \Debugbar::info($review);
 
-        // Review Modelからデータを取得する
-        $review = new Review;
         // $review->review_id = $request->review_id;
         //\Debugbar::info($review);
 
@@ -170,6 +168,8 @@ class ReviewController extends Controller
         $review_record = Review::where('review_id', $request->review_id)->first();
 
         if(empty($review_record)) {
+            // Review Modelからデータを取得する
+            $review = new Review;
             // ログインユーザのIDを取得
             $review->user_id = Auth::id();
             $review->game_id = $request->game_id;
