@@ -80,7 +80,7 @@ class ProfileController extends Controller
             // $profile->image_path = basename($path);
             $profile->image_path = Storage::disk('s3')->url($path);
         } elseif (0 == strcmp($request->remove, 'true')) {
-            $profile->image_path = null;
+            $profile->image_path = 'images/figure_standing.png';
         }
 
         // フォームから送信されてきた_tokenを削除する

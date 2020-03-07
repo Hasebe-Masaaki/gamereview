@@ -75,6 +75,7 @@ class RegisterController extends Controller
         $profile = new Profile;
         $profile->user_id = $user->id;
         $profile->user_name = $user->name;
+        $profile->image_path = 'images/figure_standing.png';
         $profile->age= " -";
         $profile->gender= " -";
         $profile->favorite_genre = " -";
