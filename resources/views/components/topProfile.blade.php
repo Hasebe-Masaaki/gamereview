@@ -7,7 +7,7 @@
         <div class="reviews-count">
             <h5 class="card">レビュー投稿: {{ $datas['post_count'] }} 件</h5>
         </div>
-        <div class="eval-reviews mt-1 mt-sm-0 ml-2">
+        <div class="eval-reviews mt-1 ml-2">
             <h5 class="card d-inline">総合評価:<a class="review_eval">{{ $datas['eval_ave'] }}</a> [{{ $datas['eval_count'] }}件]</h5>
         </div>
     </div>

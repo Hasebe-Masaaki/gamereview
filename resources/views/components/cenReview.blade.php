@@ -58,12 +58,12 @@
         </div>
         {{-- ログインユーザのみ編集、削除ボタンを表示 --}}
         @if ($review_info->profile->user_id == Auth::id() || $admin_flg)
-            <div class="col-md-1 my-auto text-center">
+            <div class="col-md-1 my-2 my-md-auto text-center">
                     <!-- <input type="button" class="review_edit mx-auto d-block" value="編集"
                         onclick="location.href='{{ action('ReviewController@edit', ['review_id' => $review_info->review_id]) }}'"> -->
-                    <a class="btn btn-primary review_add mb-2 px-1 py-0"
+                    <a class="btn btn-primary review_add mx-2 mx-md-0 mb-2 px-5 px-md-2 py-2"
                         href="{{ action($action_add, ['game_id' => $review_info->game->game_id, 'review_id' => $review_info->review_id]) }}">編集</a>
-                    <a class="btn btn-primary review_delete px-1 py-0" onclick="return confirm('レビュー内容を削除します。よろしいですか？')"
+                    <a class="btn btn-primary review_delete mx-2 mx-md-0 mb-2 mb-md-0 px-5 px-md-2 py-2" onclick="return confirm('レビュー内容を削除します。よろしいですか？')"
                         href="{{ action($action_delete, ['review_id' => $review_info->review_id]) }}">削除</a>
             </div>
         @endif
