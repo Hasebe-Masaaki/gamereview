@@ -54,10 +54,10 @@
                     </div>
                 </div>
             </div>
-            <div class="modal-footer my-0 pt-0">
+            <div class="modal-footer my-0 pt-0 row no-gutters">
             {{-- Todo:自分以外でログインしていたら評価と通報ボタンを表示 --}}
             @can('user')
-                <div class="card mr-auto pr-1 d-flex align-items-center">
+                <div class="card mr-auto pr-1 mb-3 mb-md-0 d-flex align-items-center">
                     <div class="text-left">
                         <span class="h5 pr-0">あなたの評価:</span>
                         <span class="ml-0" id="reteit-value"></span>
