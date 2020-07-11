@@ -12,7 +12,7 @@
             </div>
             <div class="modal-body m-0">
                 <div class="row no-gutters mt-0 mb-2 mx-0">
-                    <div class="game-point card text-center col-3 col-md-2">
+                    <div class="game-point card text-center col-3 col-md-2 mb-2 mb-md-0">
                         <span class="align-middle my-auto">
                             <h1 id="point-text"></h1>
                         </span>
@@ -44,7 +44,7 @@
                     <textarea readonly class="card col col-md mb-2" id="content-text" rows="10"></textarea>
                 </div>
                 <div class="user-info row no-gutters">
-                    <div class="card mr-1 d-inline">
+                    <div class="card mr-1 mb-1 mb-xs-0 d-inline">
                         <img class="card-image d-inline" id="image" src="" alt="👤">
                         <a class="h5 my-auto d-inline" id="user-text" hrer=""></a>
                     </div>

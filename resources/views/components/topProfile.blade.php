@@ -2,14 +2,18 @@
 <div class="row no-gutters mt-2">
     <div class="mx-2 row no-gutters">
         <h5 class="card">{{ $profile_info->user_name }} さん</h5>
-        <div class="reviews-count ml-4">
+    </div>
+    <div class="mx-2 row no-gutters">
+        <div class="reviews-count">
             <h5 class="card">レビュー投稿: {{ $datas['post_count'] }} 件</h5>
         </div>
-        <div class="eval-reviews mx-2">
+        <div class="eval-reviews mt-1 mt-sm-0 ml-2">
             <h5 class="card d-inline">総合評価:<a class="review_eval">{{ $datas['eval_ave'] }}</a> [{{ $datas['eval_count'] }}件]</h5>
         </div>
     </div>
-    <div class="col-md-6">
+</div>
+<div class="row no-gutters mt-2">
+    <div class="col-md-6 col-lg-4">
         <div class="row no-gutters">
             <div class="col-4 col-md-5">
                 <div class="mx-auto my-auto ml-md-3">
@@ -29,7 +33,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 col-lg-8">
         <div class="mt-2 ml-2 row no-gutters">
             <h5 class="card">自己紹介</h5>
         </div>

@@ -5,8 +5,8 @@
 @section('content')
     <div class="container">
         <div class="contain-top card mw-100 mh-20 mb-2">
-            <div class="row no-gutters mt-2">
-                <h5 class="card mt-2 mx-2">投稿するゲーム</h5>
+            <div class="row mt-2 mx-2">
+                <h5 class="card mt-1">投稿するゲーム</h5>
                 <input type="text" class="mx-2 form-control col-md-6" id="title-search"
                     value="{{ isset($game_info->game_id) ? $game_info->game_title : '' }}" placeholder="タイトルを入力してください">
             </div>

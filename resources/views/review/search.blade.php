@@ -13,7 +13,7 @@
             </div>
             @foreach($games_info as $game_info)
                 <div class="game-column row no-gutters mb-2 mx-2 mx-md-0">
-                    <div class="game-point-ave offset-md-1 col-6 col-md-3 row no-gutters">
+                    <div class="game-point-ave offset-md-1 col-12 col-md-3 row no-gutters">
                         <div class="card text-center col py-md-1">
                             <p class="my-auto">平均値</p>
                             <h2 class="my-auto">{{ $datas[$game_info->game_id]['average'] }}</h2>

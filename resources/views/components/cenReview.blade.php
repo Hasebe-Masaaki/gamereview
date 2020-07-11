@@ -20,7 +20,7 @@
         </div>
     @endif
     <div class="review-column row no-gutters mb-2 mx-2 mx-md-0">
-        <div class="game-point card text-center col-2 offset-md-1 col-md-1">
+        <div class="game-point card text-center col offset-md-1 col-md-1">
             <span class="align-middle my-auto">
                 <h3>{{ $review_info->review_point }}</h3>
             </span>
