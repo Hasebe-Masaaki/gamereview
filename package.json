@@ -27,7 +27,7 @@
     },
     "dependencies": {
         "jquery-autocomplete": "^1.2.8",
-        "jquery-ui": "^1.12.1",
+        "jquery-ui": "^1.13.0",
         "jquery-ui-dist": "^1.12.1",
         "jquery.autocomplete": "^1.2.0",
         "vue-star-rating": "^1.6.1"
